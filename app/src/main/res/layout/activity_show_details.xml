@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowDetails"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf"
+        android:layout_gravity="center">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6494979048790657/2420754522"
+            android:id="@+id/adView1">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Username"
+        tools:ignore="HardcodedText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/user_text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#696868"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/set_question_duration"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/duration_spinner"
+        >
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#696868"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/total_score"
+        />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:id="@+id/total_score"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#696868"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/total_questions_played" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:id="@+id/questions_played"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#696868"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/total_right_answers" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:id="@+id/right_answers"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:text="@string/save"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#f4f8f8"
+        android:padding="10dp"
+        android:background="@drawable/btn"
+        android:onClick="onSave"/>
+
+</LinearLayout>

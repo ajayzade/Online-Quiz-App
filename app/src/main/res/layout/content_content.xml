@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ContentActivity"
+    tools:showIn="@layout/app_bar_content"
+    android:orientation="vertical"
+    android:background="#E4F34F">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/quiz"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="auto_fit"
+            android:padding="10dp"
+            android:id="@+id/grid_view"
+            >
+        </GridView>
+
+</LinearLayout>

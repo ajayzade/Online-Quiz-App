@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#6818F7">
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#0A7C0E"
+                android:text="@string/user_login"/>
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:hint="@string/enter_your_email"
+            android:layout_marginTop="20dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:hint="@string/enter_your_password"
+            android:layout_marginTop="20dp"
+            tools:ignore="Autofill,TextFields" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#f4f4ff"
+                    android:padding="15dp"
+                    android:text="@string/login"
+                    android:background="@drawable/btn"
+                    tools:ignore="ButtonStyle"
+                    android:onClick="login"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#f4f4ff"
+                    android:padding="15dp"
+                    android:text="@string/cancel"
+                    android:background="@drawable/btn"
+                    tools:ignore="ButtonStyle"
+                    android:onClick="cancel"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/i_am_a_new_user"
+                android:textColor="#07638B"
+                android:padding="10dp"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:onClick="registerActivity"
+                />
+
+        </LinearLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>

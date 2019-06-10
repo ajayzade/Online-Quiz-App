@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <com.luolc.emojirain.EmojiRainLayout
+        android:id="@+id/emoji_rain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6818F7"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:src="@drawable/coin"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    tools:ignore="ContentDescription"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/score_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="@string/score_0"
+                    android:textColor="#f4f8f8"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/correct_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="@string/correct_0"
+                    android:textColor="#f4f8f8"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/wrong_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/wrong_0"
+                    android:textColor="#f4f8f8"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_view"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="3dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </com.luolc.emojirain.EmojiRainLayout>
+
+</LinearLayout>

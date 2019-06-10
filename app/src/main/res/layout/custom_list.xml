@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:id="@+id/custom_question"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#05C90D"
+        android:padding="10dp"
+        android:id="@+id/custom_correct_answer" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#CE7C04"
+        android:padding="10dp"
+        android:id="@+id/custom_selected_answer"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:ignore="ContentDescription"
+            android:layout_margin="10dp"
+            android:id="@+id/custom_image_view"
+            android:scaleType="fitXY"
+            android:src="@drawable/righttick"/>
+
+        <TextView
+            android:id="@+id/custom_score"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/custom_image_view"
+            tools:ignore="RtlHardcoded"
+            android:text="@string/_10"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0781B8"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
